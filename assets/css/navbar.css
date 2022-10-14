@@ -1,0 +1,192 @@
+/* Navbar */
+.navbar{
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-color-blanco);
+    padding: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+.navbar li{
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+.navbar a{
+    color: var(--color-negro);
+}
+
+.navbar a:hover{
+    color: var(--btn-color-verde);
+}
+
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.navbar__nav__izq{
+    text-transform: uppercase;
+    flex: 1;
+    margin-left: 20px;
+}
+
+.navbar__nav__der li:nth-child(1){
+    margin: 0 50px;
+}
+
+
+/* Boton login */
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    background: var(--btn-color-verde); /* ver */
+    color: var(--btn-color-blanco);
+    border: 1px solid var(--btn-color-verde);
+    border-radius: 60px;
+    padding: 8px 18px;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-login:hover{
+    background-color: var(--btn-color-blanco);
+    color: grey;
+}
+
+
+/* Menu Hamburgesa */
+.hamburgesa{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    background: none;
+    border: none;
+    z-index: 10;
+    transition: all 0.25s;
+    display: none;
+}
+
+.hamburgesa-arriba,
+.hamburgesa-medio,
+.hamburgesa-abajo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background: var(--color-negro);
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburgesa-medio{
+    transform: translateY(7px);
+}
+
+.hamburgesa-abajo{
+    transform: translateY(14px);
+}
+
+.abrir .hamburgesa-arriba{
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.abrir .hamburgesa-medio{
+    display: none;
+}
+
+.abrir .hamburgesa-abajo{
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+/* Navbar oculto lado derecho */
+
+.telefono__menu{
+    position: fixed;
+    top: 94px;
+    right: 0;
+    background-color: var(--color-primario);
+    color: var(--color-negro);
+    width: 90%;
+    height: 100%;
+    padding: 30px;
+    box-shadow: inset 0 4px 3px -3px rgb(0 0 0 / 10%), inset 0 4px 2px -2px rgb(0 0 0 / 7%);
+    transition: all 0.3s;
+}
+
+.telefono__menu ul{
+    line-height: 2;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.telefono__menu .ul__final{
+    border-bottom: var(--color-underline) solid 1px;
+}
+
+.telefono__menu a{
+    font-size: 20px;
+}
+
+.telefono__menu a:hover{
+    color: var(--btn-color-verde);
+}
+
+.telefono__menu div{
+    margin-top: 20px;
+}
+
+.telefono__menu div a{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+
+.oculto{
+    transform: translateX(100%);
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px){
+    .navbar__logo img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .navbar .navbar__nav__izq,
+    .navbar .navbar__nav__der{
+        display: none;
+    }
+    .hamburgesa{
+        display: block;
+    }
+}
+
+
+
+

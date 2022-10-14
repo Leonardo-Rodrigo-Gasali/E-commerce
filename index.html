@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/banner.css" />
+    <link rel="stylesheet" href="assets/css/productos__procesadores.css" />
+    <link rel="stylesheet" href="assets/css/productos__motherboards.css" />
+    <link rel="stylesheet" href="assets/css/productos__placas__de__video.css" />
+    <link rel="stylesheet" href="assets/css/contacto.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Porfolio</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__logo">
+          <a href="index.html">
+            <img src="assets/imagenes/logo_sin_background.png" alt="" />
+            <!-- agregar logo -->
+          </a>
+        </div>
+        <ul class="navbar__nav__izq">
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Descuentos</a></li>
+        </ul>
+
+        <ul class="navbar__nav__der">
+          <li><button class="btn btn-login">Login</button></li>
+        </ul>
+
+        <!-- Menu hamburgesa -->
+        <button type="button" class="hamburgesa" id="menu-btn">
+          <span class="hamburgesa-arriba"></span>
+          <span class="hamburgesa-medio"></span>
+          <span class="hamburgesa-abajo"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Menu derecha teléfono -->
+    <div class="telefono__menu oculto" id="menu">
+      <ul>
+        <li><a href="#">Menu</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Ofertas</a></li>
+      </ul>
+      <ul class="ul__final">
+        <li><a href="#">Descuentos</a></li>
+      </ul>
+      <div class="telefono__menu__boton">
+        <button class="btn btn-login">Login</button>
+      </div>
+    </div>
+
+    <!-- Banner chico -->
+    <section class="caja caja__a bg__primario texto__centrado py__md">
+      <div class="interno">
+        <h2 class="texto__xl">Compra de productos</h2>
+        <p class="texto__md">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab ut quia, rerum officia dolorem.
+        </p>
+        <a class="color" href="#">Ver</a>
+      </div>
+    </section>
+
+    <!-- Banner grande -->
+    <section class="caja caja__b bg__secundario grid-col__2">
+      <h2 class="texto__xl texto__centrado">Descuento 20% Off</h2>
+      <div class="caja__texto">
+          <h2 class="texto__xl">BLACK FRIDAY OFFER</h2>
+          <p class="texto__md">Desde el 25/11 al 30/11 30% de desuento en todos nuestros productos de hardware.</p>
+          <a href="#" class="btn">Comprar</a>
+      </div>
+  </section>
+
+
+    <!-- Procesadores -->
+
+    <section class="productos__procesadores" id="productos__procesadores">
+      <div class="titulo__section">
+        <h2 class="titulo__secundario">Procesadores</h2>
+      </div>
+
+      <div class="tarjeta__container">
+        <div class="tarjeta">
+          <div class="tarjeta-encabezado__procesadores">
+            <img
+              src="assets/imagenes/intel_core_i5_12600k.jpeg"
+              alt="Encriptador de Texto"
+            />
+          </div>
+          <div class="tarjeta__body">
+            <span class="tag__procesadores tag-stock">Stock</span>
+            <h4>Intel Core I5 12400</h4>
+            <p>$ 45.000</p>
+            <a href="" target="_blank" class="btn">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <div class="tarjeta-encabezado__procesadores">
+            <img
+              src="assets/imagenes/intel_core_i5_12600k.jpeg"
+              alt="Encriptador de Texto"
+            />
+          </div>
+          <div class="tarjeta__body">
+            <span class="tag__procesadores tag-stock">Stock</span>
+            <h4>Intel Core I5 12600K</h4>
+            <p>$ 60.000</p>
+            <a href="" target="_blank" class="btn">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <div class="tarjeta-encabezado__procesadores">
+            <img
+              src="assets/imagenes/intel_core_i5_13600k.jpeg"
+              alt="Encriptador de Texto"
+            />
+          </div>
+          <div class="tarjeta__body">
+            <span class="tag__procesadores tag-stock">Stock</span>
+            <h4>Intel Core I5 13600K</h4>
+            <p>$ 65.000</p>
+            <a href="" target="_blank" class="btn">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <div class="tarjeta-encabezado__procesadores">
+            <img
+              src="assets/imagenes/intel_core_i7_13700k.jpeg"
+              alt="Juego de Ahorcado"
+            />
+          </div>
+          <div class="tarjeta__body">
+            <span class="tag__procesadores tag-sin-stock">Sin Stock</span>
+            <h4>Intel Core i7 13700K</h4>
+            <p>$ 110.000</p>
+            <a href="" target="_blank" class="btn">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <div class="tarjeta-encabezado__procesadores">
+            <img
+              src="assets/imagenes/intel_core_i9_13900k.jpeg"
+              alt="Trabajo Integrador Javascript Codo a Codo"
+            />
+          </div>
+          <div class="tarjeta__body">
+            <span class="tag__procesadores tag-sin-stock">Sin Stock</span>
+            <h4>Intel Core i9 13900K</h4>
+            <p>$ 145.000</p>
+            <a href="" target="_blank" class="btn">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+     <!-- Motherboards -->
+
+     <section class="productos__motherboards" id="productos__motherboards">
+      <div class="titulo__section">
+        <h2 class="titulo__secundario">Motherboards</h2>
+      </div>
+
+      <div class="tarjeta__container">
+        <div class="tarjeta">
+          <div class="tarjeta-encabezado__motherboards">
+            <img
+              src="assets/imagenes/motherboard_asus_b660m.jpg"
+              alt="Encriptador de Texto"
+            />
+          </div>
+          <div class="tarjeta__body">
+            <span class="tag__motherboards tag-stock">Stock</span>
+            <h4>Placa Base Asus b660m</h4>
+            <p>$ 35.000</p>
+            <a href="" target="_blank" class="btn">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <div class="tarjeta-encabezado__motherboards">
+            <img
+              src="assets/imagenes/motherboard_asus_z690.jpg"
+              alt="Encriptador de Texto"
+            />
+          </div>
+          <div class="tarjeta__body">
+            <span class="tag__motherboards tag-stock">Stock</span>
+            <h4>Placa Base Asus z690 Plus wifi</h4>
+            <p>$ 55.000</p>
+            <a href="" target="_blank" class="btn">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <div class="tarjeta-encabezado__motherboards">
+            <img
+              src="assets/imagenes/msi_z690_mag.jpg"
+              alt="Encriptador de Texto"
+            />
+          </div>
+          <div class="tarjeta__body">
+            <span class="tag__motherboards tag-stock">Stock</span>
+            <h4>Placa Base Msi z690</h4>
+            <p>$ 130.000</p>
+            <a href="" target="_blank" class="btn">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <div class="tarjeta-encabezado__motherboards">
+            <img
+              src="assets/imagenes/msi_z690_mag.jpg"
+              alt="Juego de Ahorcado"
+            />
+          </div>
+          <div class="tarjeta__body">
+            <span class="tag__motherboards tag-sin-stock">Sin Stock</span>
+            <h4>Placa Base Msi z690 MAG</h4>
+            <p>$ 145.000</p>
+            <a href="" target="_blank" class="btn">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <div class="tarjeta-encabezado__motherboards">
+            <img
+              src="assets/imagenes/motherboard_asus_z690_rog.jpg"
+              alt="Trabajo Integrador Javascript Codo a Codo"
+            />
+          </div>
+          <div class="tarjeta__body">
+            <span class="tag__motherboards tag-sin-stock">Sin Stock</span>
+            <h4>Placa Base Asus z690 Rog</h4>
+            <p>$ 155.000</p>
+            <a href="" target="_blank" class="btn">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+     <!-- Placas de Video -->
+
+     <section class="productos__placas__de__video" id="productos__placas__de__video">
+      <div class="titulo__section">
+        <h2 class="titulo__secundario">Placas de Video</h2>
+      </div>
+
+      <div class="tarjeta__container">
+        <div class="tarjeta">
+          <div class="tarjeta-encabezado__placas__de__video">
+            <img
+              src="assets/imagenes/3060_msi.jpg"
+              alt="Encriptador de Texto"
+            />
+          </div>
+          <div class="tarjeta__body">
+            <span class="tag__placas__de__video tag-stock">Stock</span>
+            <h4>Placa de Video 3060 Msi</h4>
+            <p>$ 92.000</p>
+            <a href="" target="_blank" class="btn">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <div class="tarjeta-encabezado__placas__de__video">
+            <img
+              src="assets/imagenes/3060_ti.jpg"
+              alt="Encriptador de Texto"
+            />
+          </div>
+          <div class="tarjeta__body">
+            <span class="tag__placas__de__video tag-stock">Stock</span>
+            <h4>Placa de Video 3060 Ti</h4>
+            <p>$ 95.000</p>
+            <a href="" target="_blank" class="btn">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <div class="tarjeta-encabezado__placas__de__video">
+            <img
+              src="assets/imagenes/3070_ti.jpg"
+              alt="Encriptador de Texto"
+            />
+          </div>
+          <div class="tarjeta__body">
+            <span class="tag__placas__de__video tag-stock">Stock</span>
+            <h4>Placa de Video 3070 Ti</h4>
+            <p>$ 115.000</p>
+            <a href="" target="_blank" class="btn">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <div class="tarjeta-encabezado__placas__de__video">
+            <img
+              src="assets/imagenes/3080_ti.jpg"
+              alt="Juego de Ahorcado"
+            />
+          </div>
+          <div class="tarjeta__body">
+            <span class="tag__placas__de__video tag-sin-stock">Sin Stock</span>
+            <h4>Placa de Video 3080</h4>
+            <p>$ 140.000</p>
+            <a href="" target="_blank" class="btn">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <div class="tarjeta-encabezado__placas__de__video">
+            <img
+              src="assets/imagenes/3090.png"
+              alt="Trabajo Integrador Javascript Codo a Codo"
+            />
+          </div>
+          <div class="tarjeta__body">
+            <span class="tag__placas__de__video tag-sin-stock">Sin Stock</span>
+            <h4>Placa de Video 3090</h4>
+            <p>$ 180.000</p>
+            <a href="" target="_blank" class="btn">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Banner inferior -->
+    <section class="caja caja_c bg_extra grid-col__2">
+      <img src="assets/imagenes/visa_mastercard_descuentos.png" alt="Descuentos tarjeta de credito">
+      <div class="caja__texto__c">
+          <h2 class="texto__md">Descuentos Visa / Mastercard</h2>
+          <p class="texto__sm">Visitanos los días de descuentos<span> para poder salir beneficiado de nuestros descuentos </span>con los descuentos de Visa y Mastercard.</p>
+          <a href="#" class="btn">Ver</a>
+      </div>
+  </section>
+
+    <!-- Contacto -->
+
+    <section class="contacto" id="contacto">
+      <div class="container__contacto">
+        <div class="form__container">
+          <div class="izq__container">
+            <div class="izq-inner__container">
+              <h2 class="titulo__ubicacion">Ubicación</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+                eum ut laborum eveniet harum debitis quisquam iusto officiis
+                dolor sequi.
+              </p>
+              <div class="iconos">
+                <span
+                  ><a href="#" target="_blank"
+                    ><i class="fab fa-facebook-f"></i></a
+                ></span>
+                <span
+                  ><a href="#" target="_blank"><i class="fab fa-twitter"></i></a
+                ></span>
+                <span
+                  ><a href="#" target="_blank"
+                    ><i class="fab fa-instagram"></i></a
+                ></span>
+                <span
+                  ><a href="#" target="_blank"><i class="fab fa-youtube"></i></a
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="der__container">
+            <div class="der-inner__container">
+              <h2 class="titulo__contacto">Contacto</h2>
+              <form action="#">
+                <input type="text" placeholder="Nombre" required />
+                <input type="email" placeholder="Email" required />
+                <input type="phone" placeholder="Teléfono" required />
+                <textarea
+                  name="text-area"
+                  placeholder="Deja aquí tu comentario"
+                  id="#"
+                  rows="10"
+                  required
+                ></textarea>
+                <button class="btn-contacto">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy Copyright 2022 | <span>Leonardo Gasali</span></p>
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

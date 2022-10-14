@@ -1,0 +1,121 @@
+@import "style.css";
+
+/* Banner A */
+.bg__primario{
+    background-color: var(--bg-color-primario);
+    color: var(--color-primario);
+}
+
+.texto__centrado{
+    text-align: center;
+}
+
+.texto__xl{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.texto__md{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.texto__sm{
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.py__md{
+    padding: 20px 0;
+}
+
+.caja{
+    margin-bottom: 30px;
+}
+
+.interno a{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-primario);
+    text-decoration:underline;
+}
+
+
+/* Banner B */
+.bg__secundario{
+    background-color: var(--color-amarillo-taxi);
+    color: var(--color-negro);
+}
+
+
+.grid-col__2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.caja__texto{
+    max-width: 500px;
+    text-align: center;
+    justify-self: center;
+    padding: 20px 0;
+}
+.caja__texto .btn{
+    margin: 20px;
+}
+
+.caja__texto .btn:hover{
+    opacity: 1.1;
+    background-color: var(--btn-color-blanco);
+    color: var(--color-negro);
+}
+
+/* Banner C */
+.bg_extra{
+    background-color: var(--color-terciario);
+}
+
+.caja__texto__c{
+    padding: 20px 0;
+}
+
+.caja__texto__c .texto__md{
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--color-primario);
+}
+
+.caja__texto__c .texto__sm{
+    color: var(--color-primario);
+}
+
+.caja__texto__c .btn:hover{
+    opacity: 1.1;
+    background-color: var(--btn-color-blanco);
+    color: var(--color-negro);
+}
+
+/* Responsive */
+
+
+@media (max-width: 1200px) {
+    .grid-col__2{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .caja img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px){
+    .grid-col__2{
+        grid-template-columns: 1fr;
+    }
+}

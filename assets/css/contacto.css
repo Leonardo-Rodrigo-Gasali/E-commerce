@@ -1,0 +1,155 @@
+@import "style.css";
+
+/* Contacto */
+.contacto {
+  margin: 40px 0 0 0;
+}
+
+.contacto .titulo__secundario {
+  color: var(--color-negro);
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.container__contacto {
+  margin: 0 auto;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 15px 15px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.form__container {
+  display: flex;
+}
+
+.izq__container {
+  display: flex;
+  flex: 1;
+  height: 580px;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-negro);
+}
+
+.der__container {
+  display: flex;
+  flex: 1;
+  height: 580px;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color-terciario);
+}
+
+.titulo__ubicacion{
+  color: var(--color-primario);
+}
+
+.titulo__contacto {
+  color: var(--color-primario);
+  margin-bottom: 20px;
+}
+.izq__container .titulo__ubicacion {
+  font-size: 35px;
+}
+
+.der__container .titulo__contacto{
+  font-size: 35px;
+}
+
+.izq__container p {
+  font-size: 16px;
+  margin: 40px 0;
+  color: var(--color-primario);
+}
+
+
+/* Iconos Redes sociales */
+.iconos {
+  top: 980px;
+  left: 120px;
+  color: var(--color-primario);
+}
+
+.iconos a {
+  color: var(--color-primario);
+}
+
+.iconos span:not(:last-child) {
+  margin-right: 15px;
+}
+
+.iconos span {
+  font-size: 35px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.iconos span a:hover {
+  color: var(--btn-color-verde);
+} 
+
+
+.der-inner__container {
+  width: 70%;
+  height: 80%;
+  text-align: center;
+}
+
+.izq-inner__container {
+  height: 50%;
+  width: 80%;
+  text-align: center;
+  line-height: 22px;
+}
+
+input {
+  border: 1px solid var(--btn-color-verde-oscuro);
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  font-size: 13px;
+  resize: none; /* Evita que aumenten la anchura del recuadro de texto */
+}
+
+textarea {
+  border: 1px solid var(--btn-color-verde-oscuro);
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  font-size: 13px;
+  resize: none; /* Evita que aumenten la anchura del recuadro de texto */
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid var(--btn-color-verde-oscuro);
+}
+
+.btn-contacto {
+  border-radius: 20px;
+  border: 1px solid var(--btn-color-verde-oscuro);
+  background-color: var(--btn-color-verde-oscuro);
+  color: var(--btn-color-blanco);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+}
+
+.btn-contacto:hover {
+  opacity: 1.1;
+  background-color: var(--btn-color-blanco);
+  color: var(--btn-color-gris);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 480px) {
+  .izq__container {
+    display: none;
+  }
+}
